@@ -1,15 +1,15 @@
 {
     "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
     "manifestVersion": "devPreview",
-    "id": "B33D6AD8-1C09-425B-86F7-CC0B2DC66A46",
+    "id": "D0C7DF34-11A7-42B5-A1B6-91E3717769DB",
     "version": "1.0.0.0",
     "name": {
         "short": "Signature sample",
         "full": "Signature sample"
     },
     "description": {
-        "short": "Lidiar Advisory Signature Add-in",
-        "full": "Lidiar Advisory Signature Add-in"
+        "short": "Lidiar Advisory Signature Add-in - Justin Bone",
+        "full": "Lidiar Advisory Signature Add-in - Justin Bone"
     },
     "icons": {
         "outline": "assets/final_logo.png",
@@ -17,10 +17,10 @@
     },
     "accentColor": "#230201",
     "developer": {
-        "name": "Contoso",
-        "websiteUrl": "https://www.contoso.com/help",
-        "privacyUrl": "https://www.contoso.com/help",
-        "termsOfUseUrl": "https://www.contoso.com/help"
+        "name": "Lidiar Group",
+        "websiteUrl": "https://lidiargroup.com.au/",
+        "privacyUrl": "https://lidiargroup.com.au/",
+        "termsOfUseUrl": "https://lidiargroup.com.au/"
     },
     "localizationInfo": {
         "defaultLanguageTag": "en-us"

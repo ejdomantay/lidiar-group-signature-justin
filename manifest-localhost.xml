@@ -7,8 +7,8 @@
   <Version>1.0</Version>
   <ProviderName>Lidiar Group</ProviderName>
   <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Lidiar Advisory Signature Add-in"/>
-  <Description DefaultValue="Lidiar Advisory Signature Add-in"/>
+  <DisplayName DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"/>
+  <Description DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"/>
   <IconUrl DefaultValue="https://lidiargroup.com.au/wp-content/uploads/2015/10/Logo_Small_100px.png"/>
   <HighResolutionIconUrl DefaultValue="https://lidiargroup.com.au/wp-content/uploads/2015/10/Logo_Small_100px.png"/>
   <SupportUrl DefaultValue="https://lidiargroup.com.au/"/>
@@ -130,12 +130,12 @@
           <bt:Url id="runtimeJs" DefaultValue="https://localhost:3000/autorunshared.js"></bt:Url>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="residGL0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
-          <bt:String id="residStr0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
+          <bt:String id="residGL0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
+          <bt:String id="residStr0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="residAppDesc" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
-          <bt:String id="residTT0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
+          <bt:String id="residAppDesc" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
+          <bt:String id="residTT0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>

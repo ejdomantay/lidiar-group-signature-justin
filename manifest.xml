@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="MailApp">
-  <Id>{634B3249-66C5-4E9F-BA20-DE5E22D2B01E}</Id>
+  <Id>{2A2B595D-AB79-4142-9D5C-5AAD0FDBFED5}</Id>
   <Version>1.0</Version>
   <ProviderName>Lidiar Group</ProviderName>
   <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Lidiar Advisory Signature Add-in"/>
-  <Description DefaultValue="Lidiar Advisory Signature Add-in"/>
+  <DisplayName DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"/>
+  <Description DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"/>
   <IconUrl DefaultValue="https://lidiargroup.com.au/wp-content/uploads/2015/10/Logo_Small_100px.png"/>
   <HighResolutionIconUrl DefaultValue="https://lidiargroup.com.au/wp-content/uploads/2015/10/Logo_Small_100px.png"/>
   <SupportUrl DefaultValue="https://lidiargroup.com.au/"/>
@@ -28,7 +28,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://ejdomantay.github.io/lidiar-advisory-signature/src/taskpane/HTML/editsignature.html"/>
+        <SourceLocation DefaultValue="https://ejdomantay.github.io/lidiar-signature-justin/src/taskpane/HTML/editsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -125,17 +125,17 @@
           <bt:Image id="Icon16x16" DefaultValue="https://lidiargroup.com.au/wp-content/uploads/2015/10/Logo_Small_100px.png"></bt:Image>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="residUrl0" DefaultValue="https://ejdomantay.github.io/lidiar-advisory-signature/src/taskpane/HTML/editsignature.html"></bt:Url>
-          <bt:Url id="Autorun" DefaultValue="https://ejdomantay.github.io/lidiar-advisory-signature/src/runtime/HTML/autorunweb.html"></bt:Url>
-          <bt:Url id="runtimeJs" DefaultValue="https://ejdomantay.github.io/lidiar-advisory-signature/src/runtime/Js/autorunshared.js"></bt:Url>
+          <bt:Url id="residUrl0" DefaultValue="https://ejdomantay.github.io/lidiar-signature-justin/src/taskpane/HTML/editsignature.html"></bt:Url>
+          <bt:Url id="Autorun" DefaultValue="https://ejdomantay.github.io/lidiar-signature-justin/src/runtime/HTML/autorunweb.html"></bt:Url>
+          <bt:Url id="runtimeJs" DefaultValue="https://ejdomantay.github.io/lidiar-signature-justin/src/runtime/Js/autorunshared.js"></bt:Url>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="residGL0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
-          <bt:String id="residStr0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
+          <bt:String id="residGL0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
+          <bt:String id="residStr0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="residAppDesc" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
-          <bt:String id="residTT0" DefaultValue="Lidiar Advisory Signature Add-in"></bt:String>
+          <bt:String id="residAppDesc" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
+          <bt:String id="residTT0" DefaultValue="Lidiar Advisory Signature Add-in - Justin Bone"></bt:String>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>

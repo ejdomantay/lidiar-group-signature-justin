@@ -51,13 +51,19 @@ function getCurrentUser(eventObj){
 function setSignatureTemplate(curUser, eventObj){
   const busNo = curUser.Phones.filter(x => x.Type == "Business")[0];
   const emailTemplate = 
-  
+      '<span style="font-size:14px">Best Regards,</span>'+
 			'<span style="font-size:14px"><b>'+ Office.context.mailbox.userProfile.displayName +'</b></span>'+
       '<br />'+
 			'<span style="font-size:14px">'+ curUser.Title +'<span>'+
 
-    '<br />'+
-    '<br />'+
+      '<br />'+
+      '<span style="font-size:14px"><b><i>I review emails once in the morning at 0900 and once in the afternoon at 1630</i></b><span>'+
+      '<br />'+
+      
+      
+      '<span style="font-size:14px">Take this <a href="https://www.surveymonkey.com/r/3MFW87N" target="_blank">survey</a><span>'+
+      '<br />'+
+      '<br />'+
     '<table style="border:0;border-spacing:0;" cellspacing="0">'+
       '<tr>'+
         '<td style="padding-right: 10px;">'+
