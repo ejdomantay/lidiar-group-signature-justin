@@ -52,14 +52,16 @@ function setSignatureTemplate(curUser, eventObj){
   const busNo = curUser.Phones.filter(x => x.Type == "Business")[0];
   const emailTemplate = 
       '<span style="font-size:14px">Best Regards,</span>'+
+      '<br />'+
 			'<span style="font-size:14px"><b>'+ Office.context.mailbox.userProfile.displayName +'</b></span>'+
       '<br />'+
 			'<span style="font-size:14px">'+ curUser.Title +'<span>'+
 
       '<br />'+
+      '<br />'+
       '<span style="font-size:14px"><b><i>I review emails once in the morning at 0900 and once in the afternoon at 1630</i></b><span>'+
       '<br />'+
-      
+      '<br />'+
       
       '<span style="font-size:14px">Take this <a href="https://www.surveymonkey.com/r/3MFW87N" target="_blank">survey</a><span>'+
       '<br />'+
@@ -67,7 +69,7 @@ function setSignatureTemplate(curUser, eventObj){
     '<table style="border:0;border-spacing:0;" cellspacing="0">'+
       '<tr>'+
         '<td style="padding-right: 10px;">'+
-          '<img  height="85" width="130" src="https://raw.githubusercontent.com/ejdomantay/lidiar-group/main/Lidiar%20Advisory%20Logo.png"></img>'+
+          '<img  height="82" width="120" src="https://raw.githubusercontent.com/ejdomantay/lidiar-group/main/Lidiar%20Main%20Logo.png"></img>'+
         '</td>'+
         '<td>'+
           '<table style="border:0;border-spacing:0;" cellspacing="0">'+		
@@ -81,7 +83,7 @@ function setSignatureTemplate(curUser, eventObj){
           '<table style="border:0;border-spacing:0; font-size:14px; line-height: 16px;" cellspacing="0">	'+	
             '<tr>'+
               '<td>'+
-                  '<span><b>Lidiar Advisory, part of the Lidiar Group Pty Ltd</b></span>'+
+                  '<span><b>Lidiar Group Pty Ltd</b></span>'+
                   '</td>'+
             '</tr>'+
             '<tr>'+
