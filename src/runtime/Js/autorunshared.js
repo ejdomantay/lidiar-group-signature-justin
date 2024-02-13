@@ -17,45 +17,50 @@ function checkSignature(eventObj) {
 }
 
 function getCurrentUser(eventObj){
-  Office.context.mailbox.getCallbackTokenAsync({
-    isRest: true
-  }, function (result) {
-    console.log(result);  
+  setSignatureTemplate({
+    Title: "",
+    Phones: [{ Type: "Business", Number: ""}],
+    OfficeLocation: ""
+   }, eventObj);
+  // Office.context.mailbox.getCallbackTokenAsync({
+  //   isRest: true
+  // }, function (result) {
+  //   console.log(result);  
 
-    //const apiUrl = Office.context.mailbox.restUrl + "/v2.0/Users('" + Office.context.mailbox.userProfile.emailAddress + "')";
-    //const apiUrl = Office.context.mailbox.restUrl + "/v1.0/Users('" + Office.context.mailbox.userProfile.emailAddress + "')/Contacts";
-    const apiUrl = Office.context.mailbox.restUrl + "/beta/Users('" + Office.context.mailbox.userProfile.emailAddress + "')/people";
+  //   //const apiUrl = Office.context.mailbox.restUrl + "/v2.0/Users('" + Office.context.mailbox.userProfile.emailAddress + "')";
+  //   //const apiUrl = Office.context.mailbox.restUrl + "/v1.0/Users('" + Office.context.mailbox.userProfile.emailAddress + "')/Contacts";
+  //   const apiUrl = Office.context.mailbox.restUrl + "/beta/Users('" + Office.context.mailbox.userProfile.emailAddress + "')/people";
 
-    $.ajax({  
-      method: 'GET',  
-      url: apiUrl,  
-      headers: {  
-          'Authorization': 'Bearer ' + result.value,  
-          'Content-Type': 'application/json'  
-      },  
-    }).success(function(response) {  
-        const curUser = response.value.filter(x => x.UserPrincipalName == Office.context.mailbox.userProfile.emailAddress)[0];
-        console.log(curUser);
-        setSignatureTemplate(curUser, eventObj);
-    }).error(function(error) {
-       console.log(error);
-       setSignatureTemplate({
-        Title: "",
-        Phones: [{ Type: "Business", Number: ""}],
-        OfficeLocation: ""
-       }, eventObj);
-    });
-  });
+  //   $.ajax({  
+  //     method: 'GET',  
+  //     url: apiUrl,  
+  //     headers: {  
+  //         'Authorization': 'Bearer ' + result.value,  
+  //         'Content-Type': 'application/json'  
+  //     },  
+  //   }).success(function(response) {  
+  //       const curUser = response.value.filter(x => x.UserPrincipalName == Office.context.mailbox.userProfile.emailAddress)[0];
+  //       console.log(curUser);
+  //       setSignatureTemplate(curUser, eventObj);
+  //   }).error(function(error) {
+  //      console.log(error);
+  //      setSignatureTemplate({
+  //       Title: "",
+  //       Phones: [{ Type: "Business", Number: ""}],
+  //       OfficeLocation: ""
+  //      }, eventObj);
+  //   });
+  // });
 }
 
 function setSignatureTemplate(curUser, eventObj){
-  const busNo = curUser.Phones.filter(x => x.Type == "Business")[0];
+  // const busNo = curUser.Phones.filter(x => x.Type == "Business")[0];
   const emailTemplate = 
       '<span style="font-size:14px">Best Regards,</span>'+
       '<br />'+
-			'<span style="font-size:14px"><b>'+ Office.context.mailbox.userProfile.displayName +'</b></span>'+
+			'<span style="font-size:14px"><b>Justin Bone</b></span>'+
       '<br />'+
-			'<span style="font-size:14px">'+ curUser.Title +'<span>'+
+			'<span style="font-size:14px">Senior Associate - Contracts & Procurement<span>'+
 
       '<br />'+
       '<br />'+
@@ -89,16 +94,16 @@ function setSignatureTemplate(curUser, eventObj){
             '<tr>'+
               '<td>'+
                   '<span style="color:red">m.</span>'+
-                  '<span> '+ (busNo ? busNo.Number : "") +'</span>'+
+                  '<span>+61 473 015 451</span>'+
                   '<span> | <span>'+
                   '<span style="color:red">e.</span>'+
-                  '<span> '+ Office.context.mailbox.userProfile.emailAddress +'</span>'+
+                  '<span>justin.bone@lidiargroup.com.au</span>'+
                   '</td>'+
             '</tr>'+
             '<tr>'+
               '<td>'+
                 '<span style="color:red">o.</span>'+
-                '<span> '+ (curUser.OfficeLocation ? curUser.OfficeLocation : "Level 5, 144 Edward Street, Brisbane, Queensland, 4000.") +'</span>'+
+                '<span>Level 5, 144 Edward Street, Brisbane, Queensland, 4000.</span>'+
                   
               '</td>'+
             '</tr>'+
